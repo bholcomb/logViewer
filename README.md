@@ -1,7 +1,7 @@
 # logViewer
 Tool to make it easier to view log files
 
-![alt text](https://github.com/bholcomb/logViewer/images/image.png "Log Viewer")
+![log viwer image](https://github.com/bholcomb/logViewer/tree/master/images/image.png)
 
 
 ##Usage
