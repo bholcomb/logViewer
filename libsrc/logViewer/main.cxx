@@ -52,6 +52,9 @@ int main(int argc, char** argv)
    ImGui_ImplGlfw_InitForOpenGL(window, true);
    ImGui_ImplOpenGL3_Init("#version 130");
 
+   //turn off loading/saving ini file
+   ImGui::GetIO().IniFilename = 0;
+
 #if DEBUG
     parseLogFile("log.txt");
 #endif
