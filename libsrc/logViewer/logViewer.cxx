@@ -77,8 +77,8 @@ LogLine parseLine(const std::string& line)
 
    //VRE Formating
    if(line.compare(0, 6, "FATAL[") == 0) { ll.level = LogLine::FATAL; start = 6; format = 1; }
-   if(line.compare(0, 6, "WARN[") == 0) { ll.level = LogLine::WARN; start = 5; format = 1; }
-   if(line.compare(0, 6, "INFO[") == 0) { ll.level = LogLine::INFO; start = 5; format = 1; }
+   if(line.compare(0, 5, "WARN[") == 0) { ll.level = LogLine::WARN; start = 5; format = 1; }
+   if(line.compare(0, 5, "INFO[") == 0) { ll.level = LogLine::INFO; start = 5; format = 1; }
    if(line.compare(0, 8, "VERBOSE[") == 0) { ll.level = LogLine::VERBOSE; start = 8; format = 1; }
    if(line.compare(0, 6, "DEBUG[") == 0) { ll.level = LogLine::DDEBUG; start = 6; format = 1; }
 
@@ -87,7 +87,7 @@ LogLine parseLine(const std::string& line)
    if(line.compare(0, 8, "Warning:") == 0) { ll.level = LogLine::WARN; start = 8; format = 2; }
    if(line.compare(0, 5, "Info:") == 0) { ll.level = LogLine::INFO;  start = 5; format = 2; }
    if(line.compare(0, 8, "Verbose:") == 0) { ll.level = LogLine::VERBOSE; start = 8; format = 2; }
-   if(line.compare(0, 6, "DEBUG:") == 0) { ll.level = LogLine::DDEBUG; start = 6; format = 2; }
+   if(line.compare(0, 6, "Debug:") == 0) { ll.level = LogLine::DDEBUG; start = 6; format = 2; }
 
    //DIGUY formating
    if(line.compare(0, 6, "FATAL:") == 0) { ll.level = LogLine::FATAL; start = 6; format = 3; }
