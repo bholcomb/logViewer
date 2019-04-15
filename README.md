@@ -23,3 +23,10 @@ WARN
 INFO
 VERBOSE
 DEBUG
+
+## Building
+Uses premake in build directory.  Simply run: 
+
+premake5.exe vs2017 
+
+Binary executable is in bin directory if you don't want to build.
